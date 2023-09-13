@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap css js link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- cdnjs font awesome -->
+
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <header>
+        <nav>
+            <a class="navbar-brand" href="#">
+                <img src="./logoPic.png" alt="Online Code Editor" /><span>Online Code Editor</span>
+            </a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="leftsidecode">
+
+            <label><i class="fa-brands fa-html5"></i>Html</label>
+            <textarea id="hCode" onkeyup="run()"></textarea><br />
+
+            <label><i class="fa-brands fa-css3-alt"></i>Css</label>
+            <textarea id="cCode" onkeyup="run()"></textarea><br />
+
+            <label><i class="fa-brands fa-square-js"></i>Javascript</label>
+            <textarea id="jCode" onkeyup="run()"></textarea><br />
+
+
+        </div>
+
+        <div class="rightsideoutput">
+            <label><i class="fa-solid fa-eye"></i>Output</label>
+            <iframe id="i" class="output"></iframe>
+        </div>
+    </div>
+
+
+    <script>
+        function run() {
+            let htmlCode = document.getElementById("hCode").value;
+            let cssCode = document.getElementById("cCode").value;
+            let JsCode = document.getElementById("jCode").value;
+            let output = document.getElementById("i");
+
+            output.contentDocument.body.innerHTML = htmlCode + "<style>" + cssCode + "</style > ";
+            output.contentWindow.eval(jsCode);
+
+        }
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
