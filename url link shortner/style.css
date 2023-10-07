@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #C9D6FF;
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+}
+
+h1 {
+    padding-top: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    font-family: serif;
+    font-weight: 600;
+}
+
+p {
+    text-align: center;
+    text-transform: capitalize;
+    color: #000428;
+    font-size: 20px;
+    font-weight: 450;
+}
+
+
+.container {
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: inset 2px -3px 5px 1px rgba(0, 0, 0, 0.2)
+}
+
+.col-8 input {
+    margin-top: 8%;
+    margin-left: 10%;
+    text-align: center;
+    width: 50vw;
+    height: 35px;
+    padding: 5px;
+    color: gray;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.col-4 button {
+    margin-top: 60px;
+    margin-left: 20px;
+    padding: 10px;
+    font-weight: 550;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    background: transparent;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+    color: white;
+    transition: 0.6s linear;
+}
+
+.para {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 310px) {
+    #container {
+        height: 68vh;
+        margin: 0;
+        padding: 5px;
+    }
+
+    #subheading {
+        font-size: 15px;
+    }
+
+    #longurl {
+        margin-top: 15%;
+        margin-left: 5%;
+        text-align: center;
+        width: 75vw;
+    }
+
+    #short {
+        margin-top: 70px;
+        margin-left: -150%;
+        font-size: 15px;
+        padding: 5px 20px;
+    }
+
+    #shorturl {
+        margin-top: 15%;
+        margin-left: 5%;
+        text-align: center;
+        width: 75vw;
+    }
+
+    #copy {
+        margin-top: 70px;
+        margin-left: -150%;
+        font-size: 15px;
+        padding: 5px 20px;
+    }
+
+    #MediaPara {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+    }
+}
